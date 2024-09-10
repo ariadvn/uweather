@@ -76,7 +76,7 @@ export async function getServerSideProps(context) {
     usedquota, quota, quotaunit, status, regdate, expid,
     role, path, devmod, userip, } = session;
     
-    let res = await fetch("https://irmapserver.ir/research/api/weather/")
+    let res = await fetch("https://cdn.ituring.ir/research/api/weather/")
     let data = await res.json()
     let p = data
 
